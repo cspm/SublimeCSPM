@@ -24,6 +24,10 @@
         </dict>
  -->
         <dict>
+            <key>include</key>
+            <string>#comments</string>
+        </dict>
+        <dict>
             <key>match</key>
             <string>\[(FD|T|F)=</string>
             <key>name</key>
@@ -95,10 +99,6 @@
             </dict>
             <key>name</key>
             <string>meta.function.cspm</string>
-        </dict>
-        <dict>
-            <key>include</key>
-            <string>#comments</string>
         </dict>
     </array>
     <key>repository</key>
