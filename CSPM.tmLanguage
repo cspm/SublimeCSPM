@@ -41,7 +41,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>{\||\|}|{|}|\.\.|:|#|&lt;-|&lt;-&gt;|==|&lt;|&gt;|&lt;=|&gt;=|@|&</string>
+            <string>{\||\|}|{|}|\.\.|:|#|&lt;-|&lt;-&gt;|==|&lt;|&gt;|&lt;=|&gt;=|@|&amp;</string>
             <key>name</key>
             <string>keyword.operator.cspm</string>
         </dict>
