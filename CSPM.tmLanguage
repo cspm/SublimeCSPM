@@ -88,7 +88,7 @@
         <dict>
             <!-- |\([|!%$+\-.,=&lt;/&gt;]+\) -->
             <key>match</key> 
-            <string>^\s*([a-zA-Z0-9_']+)\s*(\(.*?\)|)\s*=</string>
+            <string>^\s*([a-zA-Z0-9_']+)\s*(\(.*?\)|)\s*=[^=]</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
