@@ -35,7 +35,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>-&gt;|\[\]|\|~\||\|\|\||\[\||\|]|\[\[|\]\]|\|\||;|/\\|\[&gt;</string>
+            <string>-&gt;|\[\]|\|~\||\|\|\||\[\||\|]|\[\[|\]\]|\|\||;|/\\|\[&gt;|\\</string>
             <key>name</key>
             <string>keyword.operator.process.cspm</string>
         </dict>
@@ -59,7 +59,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>(\.|\!|\?)</string>
+            <string>\.|\!|\?|\$</string>
             <key>name</key>
             <string>keyword.operator.channel.cspm</string>
         </dict>
