@@ -53,6 +53,12 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>\b(deadlock free|deterministic|divergence free)\b</string>
+            <key>name</key>
+            <string>keyword.other.assertion.cspm</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>\b(if|then|else)\b</string>
             <key>name</key>
             <string>keyword.control.cspm</string>
