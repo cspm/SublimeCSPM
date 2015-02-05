@@ -59,6 +59,12 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>(\.|\!|\?)</string>
+            <key>name</key>
+            <string>keyword.operator.channel.cspm</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>\b([0-9]+)\b</string>
             <key>name</key>
             <string>constant.numeric.cspm</string>
