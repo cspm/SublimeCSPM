@@ -35,7 +35,7 @@
         </dict>
         <dict>
             <key>match</key>
-            <string>-&gt;|\[\]|\|~\||\|\|\||\[\||\|]|\[\[|\]\]|\|\|</string>
+            <string>-&gt;|\[\]|\|~\||\|\|\||\[\||\|]|\[\[|\]\]|\|\||;|/\\|\[&gt;|\\</string>
             <key>name</key>
             <string>keyword.operator.process.cspm</string>
         </dict>
@@ -53,9 +53,21 @@
         </dict>
         <dict>
             <key>match</key>
+            <string>\b(deadlock free|deterministic|divergence free)\b</string>
+            <key>name</key>
+            <string>keyword.other.assertion.cspm</string>
+        </dict>
+        <dict>
+            <key>match</key>
             <string>\b(if|then|else)\b</string>
             <key>name</key>
             <string>keyword.control.cspm</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>\.|\!|\?|\$</string>
+            <key>name</key>
+            <string>keyword.operator.channel.cspm</string>
         </dict>
         <dict>
             <key>match</key>
@@ -88,7 +100,7 @@
         <dict>
             <!-- |\([|!%$+\-.,=&lt;/&gt;]+\) -->
             <key>match</key> 
-            <string>^\s*([a-zA-Z0-9_']+)\s*(\(.*?\)|)\s*=</string>
+            <string>^\s*([a-zA-Z0-9_']+)\s*(\(.*?\)|)\s*=[^=]</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
