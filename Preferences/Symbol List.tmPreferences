@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+    <string>Symbol List</string>
+    <key>scope</key>
+    <string>source.cspm entity.name.function</string>
+    <key>settings</key>
+    <dict>
+        <key>showInSymbolList</key>
+        <string>1</string>
+    </dict>
+	<key>uuid</key>
+	<string>284B7C41-DEDC-4531-8802-698089643F71</string>
+</dict>
+</plist>

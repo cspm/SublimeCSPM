@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>name</key>
@@ -8,10 +8,16 @@
 	<string>source.cspm</string>
 	<key>settings</key>
 	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*$</string>
+		<key>disableIndentCorrections</key>
+		<true/>
 		<key>increaseIndentPattern</key>
 		<string>((^.*(=|\blet|\bthen|\belse)\s*$)|(^.*\bif(?!.*\bthen\b.*\belse\b.*).*$))</string>
+		<key>indentOnPaste</key>
+		<string>simple</string>
 	</dict>
 	<key>uuid</key>
-	<string>0B3E1E1F-9E26-FD8E-B3E82E07C4B71425</string>
+	<string>29610CBA-0D50-4DBC-B386-915351EEC080</string>
 </dict>
 </plist>
