@@ -1,0 +1,23 @@
+[
+    {
+        "keys": ["alt+shift+t"],
+        "command": "cspm_run_typechecker",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.cspm" }]
+    },
+    {
+        "keys": ["alt+shift+r"],
+        "command": "cspm_run_fdr",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.cspm" }]
+    },
+    {
+        "keys": ["alt+shift+c"],
+        "command": "cspm_check_assertions",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.cspm" }]
+    },
+    {
+        "keys": ["alt+shift+b"],
+        "command": "cspm_check_assertions",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.cspm" }],
+        "args": { "brief": "true" }
+    }
+]

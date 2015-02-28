@@ -1,0 +1,9 @@
+{
+    // If the plugin is unable to locate fdr3 or refines, you can manually set
+    // the path to the directory containing the fdr3 and refines executables
+    // here.
+    "fdr_bin_dir": null,
+    
+    // If true, the typehecker will be run everytime a file is saved.
+    "typecheck_on_save": true,
+}

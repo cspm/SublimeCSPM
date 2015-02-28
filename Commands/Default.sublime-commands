@@ -1,0 +1,19 @@
+[
+    {
+        "caption": "CSPM: Typecheck",
+        "command": "cspm_run_typechecker"
+    },
+    {
+        "caption": "CSPM: Open in FDR",
+        "command": "cspm_run_fdr"
+    },
+    {
+        "caption": "CSPM: Check Assertions",
+        "command": "cspm_check_assertions"
+    },
+    {
+        "caption": "CSPM: Quietly Check Assertions",
+        "command": "cspm_check_assertions",
+        "args": { "brief": "true" }
+    }
+]
