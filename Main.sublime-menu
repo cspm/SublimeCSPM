@@ -12,20 +12,20 @@
                 "children":
                 [
                     {
-                        "caption": "CSPm",
+                        "caption": "CSPM",
                         "children":
                         [
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/CSPm/CSPm.sublime-settings"
+                                    "file": "${packages}/CSPM/CSPM.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/User/CSPm.sublime-settings"
+                                    "file": "${packages}/User/CSPM.sublime-settings"
                                 },
                                 "caption": "Settings – User"
                             },

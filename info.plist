@@ -7,10 +7,10 @@
 	<key>contactName</key>
 	<string>Thomas Gibson-Robinson</string>
 	<key>description</key>
-	<string>Bundle that adds syntax support for CSPm.
+	<string>Bundle that adds syntax support for CSPM.
 </string>
 	<key>name</key>
-	<string>CSPm</string>
+	<string>CSPM</string>
 	<key>uuid</key>
 	<string>45164252-B282-48DA-B780-8064CFF38A8A</string>
 </dict>
