@@ -45,6 +45,14 @@ def get_root_csp_file(view):
     else:
         return view.file_name()
 
+def process_startup_info():
+    # Don't flash a terminal window under Windows
+    startupinfo = None
+    if is_windows():
+        startupinfo = subprocess.STARTUPINFO()
+        startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+    return startupinfo
+
 def is_cspm_view(view):
     """ True if the view has a cspm file loaded"""
     if view is None or view.file_name() is None:
@@ -92,7 +100,8 @@ class CspmRunTypecheckerCommand(sublime_plugin.WindowCommand):
     def _run_typechecker(self, file_name):
         process = subprocess.Popen([
                 find_fdr_program('refines'), '--typecheck', file_name,
-            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='/')
+            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='/',
+            startupinfo=process_startup_info())
         output, _ = process.communicate()
         if process.returncode == 0:
             return None
@@ -198,7 +207,8 @@ class CspmCheckAssertionsCommand(sublime_plugin.WindowCommand):
             if brief:
                 arguments += ["--brief", "--quiet"]
             process = subprocess.Popen(arguments+[file_name],
-                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='/')
+                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd='/',
+                startupinfo=process_startup_info())
             for line in iter(process.stdout.readline, b''):
                 self.output_view.set_read_only(False)
                 self.output_view.run_command('cspm_insert_text', {
