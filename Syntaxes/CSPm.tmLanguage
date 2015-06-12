@@ -22,7 +22,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>:\[(deadlock free|deadlock-free|deterministic|divergence free|divergence-free|livelock free|livelock-free)( \[F\]| \[FD\])?\]</string>
+			<string>:\[(deadlock free|deadlock-free|deterministic|divergence free|divergence-free|livelock free|livelock-free|has trace)( \[F\]| \[FD\])?\]</string>
 			<key>name</key>
 			<string>keyword.other.assertion.cspm</string>
 		</dict>
